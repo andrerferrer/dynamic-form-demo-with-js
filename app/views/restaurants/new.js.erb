@@ -1,0 +1,4 @@
+document.getElementById('new-restaurant-form-btn')
+        .insertAdjacentHTML('beforebegin', `
+          <%= render 'restaurants/partials/restaurant_form', restaurant: Restaurant.new %>
+        `)
