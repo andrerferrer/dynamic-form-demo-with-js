@@ -1,6 +1,6 @@
 # GOAL
 
-This is a demo to show-case how to implement the creation of several models (of the same type) in a single form using a bit of async javascript.
+This is a demo to show-case how to implement the creation of several models (of the same type) in a single form using a bit of async javascript to create new form inputs dynamically.
 
 [You can also check my other demos](https://github.com/andrerferrer/dedemos/blob/master/README.md#ded%C3%A9mos).
 
