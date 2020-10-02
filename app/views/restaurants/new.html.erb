@@ -1,5 +1,36 @@
-<%= simple_form_for @restaurant do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+
+  <%#= form_for :restaurants, url: restaurants_path do |f| %>
+    
+    <%# @restaurants.each do |restaurant, index| %>
+      <%#= f.simple_fields_for restaurant, index do |g| %>
+        <%#= g.input :name %>
+        <%#= g.input :address %>
+      <%# end %>
+    <%# end %>
+    
+
+    <%#= f.submit %>
+  <%# end %>
+
+  <%= form_tag restaurants_path do %>
+    <% @restaurants.each do |restaurant| %> 
+      <%= fields_for "restaurants[]", restaurant do |f| %>
+        <div class="border">
+        
+          <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :address %>
+            <%= f.text_field :address, class: 'form-control' %>
+          </div>
+        
+        </div>
+      <% end %>
+    <% end %>
+    <%= submit_tag %>
+  <% end %>
+
+</div>
