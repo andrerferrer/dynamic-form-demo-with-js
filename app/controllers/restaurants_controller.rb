@@ -9,7 +9,14 @@ class RestaurantsController < ApplicationController
   end
 
   def new
-    @restaurants = [Restaurant.new, Restaurant.new]
+    @restaurants = [
+      Restaurant.new
+    ]
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def create
