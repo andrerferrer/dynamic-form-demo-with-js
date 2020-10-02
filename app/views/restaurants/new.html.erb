@@ -8,8 +8,9 @@
         <%= g.input :address, input_html: { value: restaurant.address } %>
       <% end %>
     <% end %>
-    
-
+    <p>
+      <%= link_to '➕', new_restaurant_path, remote: true, id: "new-restaurant-form-btn" %>
+    </p>
     <%= f.submit %>
   <% end %>
 
