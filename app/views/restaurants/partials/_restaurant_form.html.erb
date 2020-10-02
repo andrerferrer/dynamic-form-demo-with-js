@@ -1,0 +1,4 @@
+<%= simple_fields_for "restaurants[]", restaurant do |f| %>
+  <%= f.input :name, input_html: { value: restaurant.name } %>
+  <%= f.input :address, input_html: { value: restaurant.address } %>
+<% end %>
