@@ -63,6 +63,10 @@ end
 
 ```
 
+## Inspiration
+
+I drew inspiration from [this medium article](https://medium.com/@jhcheung/using-fields-for-to-edit-multiple-records-without-a-parent-record-818b8d0e98a3).
+
 And we're good to go 🤓
 
 Good Luck and Have Fun
